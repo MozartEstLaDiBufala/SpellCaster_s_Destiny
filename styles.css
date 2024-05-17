@@ -1,0 +1,93 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the phone frame */
+.phone {
+    width: 360px; /* Adjust the width of the phone as needed */
+    height: 640px; /* Adjust the height of the phone as needed */
+    background: #333; /*change la couleur de l'objest*/
+    border-radius: 10px; /*ajuster l'arrondissement des bords*/
+
+    position: absolute; /* Utilisation de position absolue */
+    top: 50%; /* Aligne le haut de l'élément au milieu de la fenêtre */
+    left: 50%; /* Aligne la gauche de l'élément au milieu de la fenêtre */
+    transform: translate(-50%, -50%); /* Déplace l'élément de moitié de sa largeur et de sa hauteur vers la gauche et vers le haut pour le centrer */
+
+    /*margin: 50% auto; /* Le navigateur calcule automatiquement la marge */
+    /*margin: 10px 20px 15px 5px; /* Applique une marge de 10px en haut, 20px à droite, 15px en bas et 5px à gauche */
+    /*margin: 10px 20px; /* Applique une marge de 10px en haut et en bas, et de 20px à gauche et à droite */
+    overflow: hidden; /*Tout contenu qui dépasse les dimensions de l'élément est masqué et n'est pas visible.*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /*pour faire une ombre derrierre*/
+}
+
+/* Style for the screen inside the phone */
+.screen {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding: 0px; /*définit l'espace entre le contenu d'un élément et ses bords intérieurs*/
+    box-sizing: border-box;
+    position: relative; /* Ajoute un positionnement relatif à l'élément .screen */
+}
+
+
+
+
+.image_entiere {
+    width: 100%; /* 100% de la largeur de l'élément .screen */
+    height: auto; /* La hauteur s'ajustera automatiquement en fonction de la largeur pour conserver le ratio */
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.image_icones {
+    position: absolute; /* Positionnement absolu pour placer cette image par-dessus l'autre */
+    top: 0; /* Ajuste la position verticale selon tes besoins */
+    left: 0; /* Ajuste la position horizontale selon tes besoins */
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+    width: 18%; /* 100% de la largeur de l'élément .screen */
+    height: auto; /* La hauteur s'ajustera automatiquement en fonction de la largeur pour conserver le ratio */
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.bp_experience {
+    top: 540px; 
+    left: 10px; 
+}
+.bp_entrainement {
+    top: 540px;  
+    left: 80px; 
+}
+.bp_aventure {
+    top: 540px; 
+    left: 150px; 
+}
+.bp_deck {
+    top: 540px;  
+    left: 220px; 
+}
+.bp_magasin {
+    top: 540px; 
+    left: 290px; 
+}
+
+
+.lancer_jeu {
+    width: 50px; /* Ajuste la largeur selon tes besoins */
+    height: 50px; /* Ajuste la hauteur selon tes besoins */
+    border-radius: 50%; /* Rend les coins arrondis pour former un cercle */
+    margin: 30px;
+    position: absolute;
+    background-image: url('./Images/maison.png');
+    background-size: 45px; /* Ajuste la taille de l'image */
+    background-position: center; /* Centre l'image à l'intérieur du cercle */
+    background-color: #333; /* Couleur de fond du cercle */
+}
